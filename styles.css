@@ -1,0 +1,292 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+.assets .images .Beach.jpg{
+    object-fit: cover;
+}
+.max-width{
+    max-width: 1300px;
+    padding: 10 80px;
+    margin: auto;
+}
+.navbar{
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+    padding: 15px 0;
+    background: turquoise;
+    font-family: 'Oswald', sans-serif;
+}
+.navbar .max-width{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+.navbar .logo a{
+    color: grey;
+    font-size: 40px;
+    font-weight: 600;
+}
+.navbar .logo a span{
+    color: rgb(9, 28, 68);
+}
+.navbar .menu li {
+    list-style: none;
+    display: inline-block;
+    font-size: 40px;
+}
+.navbar .menu li a{
+    color: white;
+    font-size: 30px;
+    font-weight: 500px;
+    margin-left: 25px;
+    transition: color 0.3s ease;
+}
+.navbar .menu li a:hover{
+    color: rgb(9, 28, 68);
+}
+.home{
+    display: flex;
+    background-color: teal;
+    height: 100vh;
+    color: rgb(9, 28, 68);
+    min-height: 500px;
+    font-family: 'Oswald', sans-serif;
+    font-size: 75px;
+    font-style: oblique;
+    text-align: center;
+    text-emphasis-position: right;
+    display: flex;
+}
+.home .max-width{
+    margin: auto 0 auto 40px;
+}
+.home .home-content .text-1{
+    font-size: 75px;
+}
+.home .home-content .text-2{
+    font-size: 75px;
+    font-weight: 600;
+    margin-left: 30px;
+}
+.home .home-content .text-3{
+    font-size: 40px;
+    margin: 5px 0;
+}
+.about .about-content .column{
+    width: 50%; 
+}
+@media (max-width: 1300px){
+    .home .max-width{
+        margin-left: 0px;
+    }
+}
+@media (max-width: 1104px) {
+     .about .about-content .left img{
+         height: 350px;
+          width: 350px; 
+     }
+}
+section{
+    padding: 75px 0;
+}
+.about, .services, .contact{
+    font-family: 'Oswald', sans-serif;
+}
+section  .title{
+    position: relative;
+    text-align: center;
+    font-size: 60px;
+    font-weight: 500;
+    margin-bottom: 60px;
+    padding-bottom: 20px;
+    font-family: 'Oswald', sans-serif;
+}
+section .title::before{
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    width: 180px;
+    height: 3px;
+    background: #111;
+    transform: translateX(-50%);
+}
+section .title::after{ 
+    position: absolute;
+    bottom: -12px;
+    left: 50%;
+    font-size: 20px;
+    color: rgb(9, 28, 68);
+    padding: 5px;
+    background: white;
+    transform: translateX(-50%);
+}
+.about .title::after{
+    content: "Learn My Story";
+} 
+.about .about-content,
+.services .serv-content,
+.contact .contact-content{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+.about .about-content .left{
+    width: 45%; 
+}
+.about .about-content .left img{
+    flex-wrap: wrap;
+    height: 400px;
+    width: 400px;
+    object-fit: cover;
+    border-radius: 6px;
+}
+.about .about-content .right{
+    display: flex;
+    flex-wrap: wrap;
+    width: 55%;
+    font-size: 150%;
+    font-weight: 600;
+}
+.about .about-content .right .text{
+    display: flex;
+    flex-wrap: inherit;
+    font-size: 150%;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.about .about-content .right p{
+    text-align: justify;
+    flex: 100%;
+}
+
+/* this part isn't working, going to try another way*/
+.services{
+    color: rgb(9, 28, 68);
+    background: teal;
+}
+.services .title::before{
+    background: white;
+}
+.services .title::after{ 
+    background: teal;
+    content: "What I Can Do";
+}
+.services .serv-content .card{
+    width: calc(33% - 20px);
+    background: turquoise;
+    text-align: center;
+    border-radius: 6px;
+    padding: 20px 25px;
+    cursor: pointer;
+    transition: all 00.3s ease;
+}
+.services .serv-content .card:hover{
+    background: lightskyblue;
+}
+.services .serv-content .card .text{
+    font-size: 25px;
+    font-weight: 500;
+    margin: 10px 0 7px;
+}
+.services .serv-content .card .box{
+    transition: all 00.3s ease;
+}
+.services .serv-content .card:hover .box{
+    transform: scale(1.05);
+}
+@media (max-width: 1300px) {
+    .home .max-width{
+        margin-left:  0px;
+    }
+}
+
+@media (max-width: 1100px) {
+    .about .about-content .left .img{
+        height: 350px;
+        width: 350px;
+    }
+}
+
+@media (max-width: 1000px){
+    .max-width{
+        padding: 0 50px;
+    }
+}
+@media (max-width: 950px){
+    .navbar .menu{
+        position: fixed;
+        height: 100vh;
+        width: 100%;
+        left: -100%;
+        top: 0;
+        background: rgb(9, 28, 68);
+        text-align: center;
+        padding-top: 80px;
+        transition: all 00.3s ease;
+    }
+    .home .home-content .text-2{
+        font-size: 70px;
+    }
+    .home .home-content .text-3{
+        font-size: 35PX;
+    }
+    .home .home-content a{
+        font-size: 25px;
+        padding: 10px 30px;
+    }
+    .max-width{
+        max-width: 800px;
+    }
+    .about .about-content .column{
+        width: 100%;
+    }
+    .about .about-content .left{
+        display: flex;
+        justify-content: center;
+        margin: 0 auto 60px;
+    }
+    .about .about-content .right{
+        flex: 100%
+    }
+    .services .serv-content .card{
+        width: calc(50% - 10px);
+        margin-bottom: 20px;
+    }
+}
+@media (max-width: 690px){
+    .max-width{
+        padding: 0 23PX;
+    }
+    .home .home-content .text-2{
+        font-size: 60px;
+    }
+    .home .home-content .text-3{
+        font-size: 32px;
+    }
+    .home .home-content a{
+        font-size: 20px;
+    }
+    .services .serv-content .card{
+        width: 100%;
+    }
+    .contact .contact-content .card{
+        width: 100%;
+    }
+}
+@media (max-width: 500px) {
+    .home .home-content .text-2{
+        font-size: 50px;
+    }
+    .home .home-content .text-3{
+        font-size: 27px;
+    }
+}
