@@ -11,7 +11,7 @@
 }
 .max-width{
     max-width: 1300px;
-    padding: 10 80px;
+    /* padding: 10 80px; */
     margin: auto;
 }
 .navbar{
@@ -65,7 +65,7 @@
     display: flex;
 }
 .home .max-width{
-    margin: auto 0 auto 40px;
+    margin: auto;
 }
 .home .home-content .text-1{
     font-size: 75px;
